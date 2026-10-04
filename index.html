@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="worthly — Know what you own. Know what you owe. A private personal finance and net-worth tracker.">
+  <title>worthly — Know what you own. Know what you owe.</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #06110d;
+      color: #f2f7f4;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: auto;
+    }
+
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid rgba(160, 220, 190, 0.08);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #d4ad5a, #8b6a28);
+      color: #06110d;
+      font-weight: 900;
+      font-size: 19px;
+    }
+
+    nav a {
+      color: #a9b9b1;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #b8e6ca;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 105px 0 90px;
+    }
+
+    .eyebrow {
+      color: #9dd8b3;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(52px, 10vw, 92px);
+      line-height: 0.95;
+      letter-spacing: -4px;
+      margin-bottom: 24px;
+    }
+
+    .tagline {
+      font-size: clamp(20px, 4vw, 30px);
+      color: #d3ddd8;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: auto;
+      color: #91a29a;
+      font-size: 17px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding-bottom: 90px;
+    }
+
+    .card {
+      background: #0b1b14;
+      border: 1px solid rgba(160, 220, 190, 0.12);
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #8fa29a;
+      font-size: 15px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 70px 20px;
+      border-top: 1px solid rgba(160, 220, 190, 0.08);
+      border-bottom: 1px solid rgba(160, 220, 190, 0.08);
+    }
+
+    .cta h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #91a29a;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: #a9dfbb;
+      color: #06110d;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 5px;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: #b8e6ca;
+      border: 1px solid rgba(184, 230, 202, 0.3);
+    }
+
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      color: #6f8078;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #8fae9d;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        margin-left: 12px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 75px 0 65px;
+      }
+
+      .card-grid {
+        grid-template-columns: 1fr;
+        padding-bottom: 60px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <div class="mark">W</div>
+          <span>worthly</span>
+        </div>
+
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="support.html">Support</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Private personal finance</div>
+
+        <h1>worthly</h1>
+
+        <div class="tagline">
+          Know what you own. Know what you owe.
+        </div>
+
+        <p class="intro">
+          Worthly helps you keep track of your assets, investments,
+          loans, personal debts and overall net worth — simply and privately.
+        </p>
+      </div>
+    </section>
+
+    <section class="container card-grid">
+
+      <div class="card">
+        <h2>Know what you own</h2>
+        <p>
+          Keep a clear picture of your cash, investments,
+          property, gold, vehicles and other assets.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Know what you owe</h2>
+        <p>
+          Track loans, EMIs, personal debts and repayments
+          in one simple place.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>See your net worth</h2>
+        <p>
+          Understand your financial position with a simple
+          view of assets minus liabilities.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="cta">
+      <h2>Built for your financial picture.</h2>
+      <p>
+        Private by design. Simple by purpose.
+      </p>
+
+      <a class="button" href="privacy.html">Privacy Policy</a>
+      <a class="button secondary" href="support.html">Get Support</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2026 worthly. All rights reserved.</div>
+      <div style="margin-top: 10px;">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
